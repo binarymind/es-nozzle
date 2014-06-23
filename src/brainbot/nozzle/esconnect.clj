@@ -44,7 +44,7 @@ subcommands of the esconnect worker types are implemented here"
                     :omit_norms true},
              :lastmodified {:type "date", :store "yes"},
              :size {:type "long", :store "yes"},
-             :content {:type "string", :store "yes"},
+             :content {:type "string", :store "yes",:term_vector "with_positions_offsets"},
              :content_type {:type "string", :store "yes" :index "not_analyzed"},
              :extension {:type "string", :store "yes" :index "not_analyzed"},
              :title   {:type "string", :store "yes"},
